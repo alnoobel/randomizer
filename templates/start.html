@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Числовая угадайка</title></head>
+<body>
+    <h1>Добро пожаловать в числовую угадайку</h1>
+    <p>Давай придумаем условие! Будем угадывать число от 1 до ...</p>
+    <form method="post">
+        <input type="text" name="num" required>
+        <button type="submit">Начать игру</button>
+    </form>
+    {% if error %}<p style="color:red;">{{ error }}</p>{% endif %}
+</body>
+</html>

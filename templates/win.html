@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Поздравляем!</title></head>
+<body>
+    <h2>Вы угадали, поздравляем!</h2>
+    <p>Количество попыток: {{ attempts }}</p>
+
+    <form action="{{ url_for('restart') }}" method="post">
+        <p>Хочешь сыграть еще раз? Напиши "да", и играй снова!</p>
+        <button type="submit">Да</button>
+    </form>
+
+    <p>Спасибо, что играли в числовую угадайку. Еще увидимся...</p>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Угадай число</title></head>
+<body>
+    <p>А теперь проверь свою интуицию! Введи число:</p>
+    <form method="post">
+        <input type="text" name="n" required>
+        <button type="submit">Проверить</button>
+    </form>
+    {% if message %}<p>{{ message }}</p>{% endif %}
+    <p>Попытка №{{ ctr }}</p>
+</body>
+</html>
